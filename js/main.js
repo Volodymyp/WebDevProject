@@ -10,7 +10,7 @@ function ibg(){
   });
 }
 
-ibg();
+/*ibg();
 
   var readMoreHtml = $('.photodiary-content-readmore').html();
   var lessText = readMoreHtml.substr(0, 300);
@@ -30,7 +30,7 @@ ibg();
    $(this).parent(".photodiary-content-readmore").html(readMoreHtml.substr(0, 300)).append("<a href='' class='read-more-link'> Show more</a>")
   })
 
-});
+});*/
 
 
 
