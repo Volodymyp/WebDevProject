@@ -3,34 +3,19 @@ $(document).ready(function () {
 
 function ibg(){
 
- $.each($('.ibg'), function(index, val) {
-    if($(this).find('img').length>0){
-      $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
-    }
-  });
+let ibg=document.querySelectorAll(".ibg");
+for (var i = 0; i < ibg.length; i++) {
+if(ibg[i].querySelector('img')){
+ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+}
+}
 }
 
-/*ibg();
+ibg();
 
-  var readMoreHtml = $('.photodiary-content-readmore').html();
-  var lessText = readMoreHtml.substr(0, 300);
-  if (readMoreHtml.length > 300) {
-    $('.photodiary-content-readmore').html(lessText).append("<a href='' class='read-more-link'> Show more</a>");
-  }else{
-    $('.photodiary-content-readmore').html(readMoreHtml);
-  }
 
-  $("body").on("click", ".read-more-link", function (event) {
-    event.preventDefault();
-    $(this).parent(".photodiary-content-readmore").html(readMoreHtml).append("<a href='' class='show-less-link'> Show less</a>")
-  })
 
-  $("body").on("click", ".show-less-link", function (event) {
-   event.preventDefault();
-   $(this).parent(".photodiary-content-readmore").html(readMoreHtml.substr(0, 300)).append("<a href='' class='read-more-link'> Show more</a>")
-  })
-
-});*/
+});
 
 
 
